@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
+/*Notes for review:
+review border-box, grid-template column/row. All other elements make sense at this time. */
+
 body {
   display: grid;
   height: 100vh;
