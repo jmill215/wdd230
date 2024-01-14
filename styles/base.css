@@ -101,12 +101,14 @@ main h1 {
     background-color: #1B263B;
     color: #ffffff;
     padding: 1rem;
+    border-radius: 2px;
 }
 
 .card ul {
     list-style-type: none;
     padding: 1rem;
     border: 1px solid #0D1B2A;
+    border-radius: 3px;
     
 }
 
