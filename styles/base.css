@@ -1,0 +1,149 @@
+/*Color pallette
+#0D1B2A (Rich Black)
+#1B263B (Oxford Blue)
+#415A77 (YInMn Blue)
+#778DA9 (Silver Lake Blue)
+#E0E1DD (Platinum)
+
+Note: Use Montserrat for headings, and Open Sans for body/smaller text
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Mobile Layout*/
+/**********************************************************************************/
+body {
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+}
+
+/*Header*/
+/*************************************************************/
+
+header {
+    background-color: #415A77;
+    text-align: center;
+    color: #ffffff;
+}
+
+#personalPhoto {
+    width: 130px;
+    height: auto;
+    border-radius: 15px;
+}
+
+header span {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header p {
+    margin-left: 2rem;
+}
+
+/*Nav*/
+/*************************************************************/
+nav {
+    background-color: #0D1B2A;
+    color: #ffffff;
+    justify-items: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+nav a:hover {
+    background-color: #E0E1DD;
+    color:#000000
+}
+
+/*Main*/
+/**************************************************************/
+main {
+    display: grid;
+    justify-items: center;
+}
+
+
+main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*.card (section)*/
+/*************************************************************/
+.card h2 {
+    text-align: center;
+    background-color: #1B263B;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+    border: 1px solid #0D1B2A;
+    
+}
+
+.card li {
+    padding: 0.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card p {
+    padding: 1rem;
+    border: 1px solid #0D1B2A;
+}
+
+.card:nth-of-type(2) {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/*Footer*/
+/*************************************************************/
+footer {
+    background-color: #415A77;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+#lastModified {
+    color:goldenrod;
+}
+
+
+
+
+
