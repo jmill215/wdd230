@@ -45,13 +45,22 @@ header span {
     font-size: 1.5rem;
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
 /*Nav*/
 /*************************************************************/
 nav {
     background-color: #0D1B2A;
     color: #ffffff;
     justify-items: center;
-    
+    display: none;
 }
 
 nav ul {
@@ -75,6 +84,8 @@ nav a:hover {
     background-color: #E0E1DD;
     color:#000000
 }
+
+
 
 /*Main*/
 /**************************************************************/
