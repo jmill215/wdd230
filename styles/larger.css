@@ -1,11 +1,18 @@
 @media screen and (min-width: 1000px) {
-    
+
+    #myButton {
+        display: none;
+    }
+
+    header span {
+        margin: auto auto;
+    }
     
     nav {
         height: 3.7rem;
     }
     
-    nav ul{
+    nav .menulinks{
         display:flex;
     }
 
@@ -18,6 +25,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.2fr 1fr;
         justify-items: center;
+        margin-top: -7.6rem;
     }
 
     main h1 {

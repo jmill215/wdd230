@@ -24,16 +24,17 @@
 </head>
 <body>
     <div id="mode">
-        🕶️
+        🌘
     </div>
     <header>
         <span><img id="personalPhoto" src="images/JacobMiller_300x300.png" alt="Personal Photo of Jacob M."> &nbsp;&nbsp;&nbsp;Jacob W. Miller </span>
     </header>
     <nav>
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html" target="_blank" rel="noopener noreferrer">Site Plan</a></li>
+        <button id = myButton>☰</button>
+        <ul class = "menulinks">
+            <li class="current-menu-item"><a>Home</a></li>
+            <li><a title="Chamber Page">Chamber</a></li>
+            <li><a title="Chamber Site Plan" href="week01/chamber-site-plan.html" target="_blank" rel="noopener noreferrer">Site Plan</a></li>
             <li><a>Form</a></li>
         </ul>
     </nav>
@@ -73,5 +74,7 @@
         <p id="lastModified">Last Modified:</p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/burgermenu.js"></script>
 </body>
 </html>

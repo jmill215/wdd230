@@ -60,9 +60,11 @@ nav {
     background-color: #0D1B2A;
     color: #ffffff;
     justify-items: center;
+    
+}
+nav .menulinks {
     display: none;
 }
-
 nav ul {
     list-style-type: none;
     
@@ -143,7 +145,6 @@ footer {
     background-color: #415A77;
     color: #ffffff;
     text-align: center;
-    margin-top: 1rem;
 }
 
 footer p {
@@ -153,8 +154,3 @@ footer p {
 #lastModified {
     color: #ffffff;
 }
-
-
-
-
-
