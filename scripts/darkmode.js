@@ -1,7 +1,6 @@
 const modeButton = document.querySelector('#mode');
 const main = document.querySelector("main");
 
-
 modeButton.addEventListener("click", function() {
     if (modeButton.textContent.includes ("🌘")) {
         main.style.background = "#000000";
