@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(39, 39, 39);
+    color: #ffffff;
+}
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 480px;
+    display: block;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer p{
+    text-align: center;
+}
