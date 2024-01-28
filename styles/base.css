@@ -14,18 +14,14 @@ Note: Use Montserrat for headings, and Open Sans for body/smaller text
     box-sizing: border-box;
 }
 
-
-/*Mobile Layout*/
-/**********************************************************************************/
 body {
-    min-height: 100vh;
     font-family: "Montserrat", sans-serif;
-    display: grid;
+    position: relative;
+    min-height: 100vh;
 }
 
 /*Header*/
 /*************************************************************/
-
 header {
     background-color: #415A77;
     text-align: center;
@@ -38,13 +34,6 @@ header {
     border-radius: 15px;
 }
 
-header span {
-    min-height: 100px;
-    display: inline-flex;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
 #mode {
 	position: absolute;
 	top: 1rem;
@@ -54,98 +43,157 @@ header span {
 	font-size: 2rem;
 }
 
-#myButton {
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 2rem;
+header span {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
 }
-
-/*Nav*/
-/*************************************************************/
-nav {
-    background-color: #0D1B2A;
-    color: #ffffff;
-    justify-items: center;
-    
-}
-nav .menulinks {
-    display: none;
-}
-
-nav ul {
-    list-style-type: none;
-    
-}
-
-nav a {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-nav a:hover {
-    background-color: #E0E1DD;
-    color:#000000
-}
-
 
 
 /*Main*/
 /**************************************************************/
 main {
-    display: grid;
     justify-items: center;
+    
 }
 
+main.dark {
+    background-color: #000000;
+}
+
+main.dark h1 {
+    color: #ffffff;
+}
 
 main h1 {
     font-size: 1.5rem;
     text-align: center;
     text-decoration: underline;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-/*.card (section)*/
-/*************************************************************/
-.card h2 {
-    text-align: center;
-    background-color: #1B263B;
-    color: #ffffff;
-    padding: 1rem;
-    border-radius: 2px;
-}
-
-.card ul {
-    list-style-type: none;
-    padding: 1rem;
-    border: 1px solid #0D1B2A;
-    border-radius: 3px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
     
 }
 
-.card li {
-    padding: 0.2rem;
-    font-family: "Open Sans", sans-serif;
+
+/* Parent Div and all subsequent child elements */
+.parent {
+    margin: 1rem 2vw;
 }
 
-.card p {
+.parent section {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden; /* I need to use this more often!!! */
+    margin: 1rem 0;
+}
+
+.parent h2 {
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+    background-color: #1B263B;
+    color: #ffffff;
+}
+
+.parent ul {
     padding: 1rem;
-    border: 1px solid #0D1B2A;
+    list-style-type: none;
 }
 
-.card:nth-of-type(2) {
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+.parent li {
+    font-family: "Open Sans", sans-serif;
+    padding: 0.2rem;
 }
 
+iframe {
+    display: block;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hero {
+    position: relative;
+}
+.hero picture{
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    background:radial-gradient(#fff, #415A77);
+    border: 1px solid rgba(12, 1, 1, 0.726);
+    border-radius: 4px;
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #000;
+}
+
+.hero-overlay p {
+    font-family: "Open Sans", sans-serif;
+    padding: .25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#visitHolder {
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem;
+}
+
+/*Nav & myButton CSS settings (refactored from last push) */
+nav {
+    background-color: #0D1B2A;
+    color: #ffffff;
+    justify-items: center;
+}
+
+
+
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#ffffff;
+    cursor: pointer;
+    text-align: left;
+    padding: .30rem 2vw;
+    width: 44px;
+}
+
+
+/*Menulinks and other related information when in mobile form*/
+ul.menulinks{
+    display: none;
+    font-family: "Open Sans", sans-serif;
+    list-style-type: none;
+}
+
+ul.menulinks li a {
+    display: block;
+    padding: .77rem 2vw;
+    color: #ffffff;
+}
+
+ul.menulinks a:hover {
+    background-color: #e0e1dd52;
+}
+
+ul.open.menulinks{
+    display: block;
+}
 
 /*Footer*/
 /*************************************************************/
@@ -155,9 +203,7 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin-top: 1rem;
-}
+
 
 #lastModified {
     color: #ffffff;
