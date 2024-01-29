@@ -1,6 +1,73 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
 header {
     background-color: #283618;
     color: #ffffff;
 }
 
+/*Nav*/
+/***************************************/
+nav {
+    background-color: #0D1B2A;
+    color: #ffffff;
+    justify-items: center;
+}
+
+
+
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#ffffff;
+    cursor: pointer;
+    text-align: left;
+    padding: .30rem 2vw;
+    width: 44px;
+}
+
+
+/*Menulinks and other related information when in mobile form*/
+ul.menulinks{
+    display: none;
+    font-family: "Open Sans", sans-serif;
+    list-style-type: none;
+}
+
+ul.menulinks li a {
+    display: block;
+    padding: .77rem 2vw;
+    color: #ffffff;
+}
+
+ul.menulinks a:hover {
+    background-color: #e0e1dd52;
+}
+
+ul.open.menulinks{
+    display: block;
+}
+
+
+img {
+    width: 100%;
+    height: 20%;
+    filter: brightness(0.8);
+ }
+
+
+ 
+ /*Body*/
+ .parent {
+    margin: 1rem 2vw;
+}

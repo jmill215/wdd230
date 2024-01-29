@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park City Chamber of Commerce</title>
     <meta name="author" content="Jacob Miller">
-    <meta name="description" content="Chamber of Commerce Web Project">
-    <!-- Social Media meta tags -->
-    <meta property="og:title" content="Jacob Miller's Chamber Site Project">
+    <meta name="description" content="WDD 230 - Chamber Page">
+    <link rel= "icon" href="favicon.ico">
+    <!--Facebook og tags, and remaining link for font/stylesheets-->
+    <meta property="og:description" content ="WDD 230 - Web Frontend Development, Jacob W. Miller's Chamber of Commerce assignment page">
+    <meta property="og:title" content="Jacob Miller's WDD 230 Chamber Assignment">
     <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
@@ -22,33 +28,45 @@
                 <button id = myButton>☰</button>
                 <ul class = "menulinks">
                     <li class="current-menu-item"><a>Home</a></li>
-                    <li><a title="Chamber Page">Chamber</a></li>
-                    <li><a title="Chamber Site Plan" href="week01/chamber-site-plan.html" target="_blank" rel="noopener noreferrer">Site Plan</a></li>
-                    <li><a>Form</a></li>
+                    <li><a>Discover</a></li>
+                    <li><a>Directory</a></li>
+                    <li><a>Join</a></li>
+
         </div>
     </header>
     <div id="hero-image">
     <img src="images/park_city_main.jpg" alt="Photo of Main Street, Park City - by Olivia Hutcherson">
-    </div>
-    <div id="call">
+    <div id="hero-call">
         <button type="button" class="action">Join the Chamber</button>
     </div>
-    <div id="current-events">
-        <section>
-            <h2>Events</h2>
-            <hr>
-            <p>events go here</p>
-            <p>Join us for....</p>
-        </section>
     </div>
-    <div id="weather-card">
-
-    </div>
-    <div id="spotlight">
-
+    <div class="parent">
+        
+        <div id="current-events">
+            <section id="current-card">
+                <h2>Events</h2>
+                <p>events go here</p>
+                <p>Join us for....</p>
+            </section>
+        </div>
+        <div id="weather">
+            <section id="current-weather">
+                <h2>Events</h2>
+                <p>events go here</p>
+                <p>Join us for....</p>
+            </section>
+        </div>
+        <div id="spotlight">
+            <section id="spotlight-card">
+                <h2>Events</h2>
+                <p>events go here</p>
+                <p>Join us for....</p>
+            </section>
+        </div>
     </div>
     <footer>
         
     </footer>
+    <script src="scripts/burgermenu.js"></script>
 </body>
 </html>

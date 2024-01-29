@@ -7,13 +7,13 @@ body {
 
 header {
     text-align: center;
-    background-color: #283618;
+    background-color: #071330;
     color: #ffffff;
 }
 
 #subhead-overview {
     margin-top: 2rem;
-    background-color: #606C38;
+    background-color: #0c4160;
     color: #ffffff;
 }
 
@@ -33,22 +33,25 @@ section {
     align-items: center;
 }
 
+#colors {
+    margin: 0 auto;
+}
 /* Color Schema Color pallette */
 #color-header {
-    background-color: #283618;
+    background-color: #071330;
     color:#ffffff;
 }
 
 #color-subheader {
-    background-color: #606C38;
+    background-color: #0c4160;
     color: #ffffff;
 }
 
 #color-border {
-    background-color: #BC6C25;
+    background-color: #738fa7;
     color: #ffffff;
 }
 
 #color-accent {
-    background-color: #FEFAE0;
+    background-color: #c3ceda;
 }

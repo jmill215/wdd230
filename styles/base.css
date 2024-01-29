@@ -142,9 +142,10 @@ iframe {
 .hero-overlay p {
     font-family: "Open Sans", sans-serif;
     padding: .25rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
+    text-wrap: nowrap;
 }
 
 #visitHolder {
