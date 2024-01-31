@@ -21,4 +21,15 @@
        background-color: #e0e1dd52;
    }
 
+   .parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+   }
+
+   .parent-spotlight {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5px;
+   }
 }
