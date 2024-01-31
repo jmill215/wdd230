@@ -29,7 +29,7 @@
 
    .parent-spotlight {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
    }
 }

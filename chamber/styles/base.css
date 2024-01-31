@@ -18,8 +18,8 @@ header {
 }
 
 header h1 {
-    padding-top: 1rem;
     text-align: center;
+    margin: 0;
 }
 
 /*Nav*/
@@ -87,6 +87,7 @@ img {
     background-color: #eeeeee; /*change later with color*/
     overflow: hidden; /* I need to use this more often!!! */
     margin: 1rem 0;
+    font-family: "Baskerville Libre";
 }
 
 .parent h2 {
@@ -106,6 +107,7 @@ img {
     background-color: #eeeeee; /*change later with color*/
     overflow: hidden; /* I need to use this more often!!! */
     margin: 1rem 0;
+    font-family: "Baskerville Libre";
 }
 
 .parent-spotlight h2 {
@@ -114,19 +116,39 @@ img {
     text-align: left;
 }
 
+#spotlight1 {
+    margin: 1rem;
+}
 
 
 #current-events {
     text-align: center;
 }
 
-#current-events {
+#current-weather {
     text-align: center;
-    
 }
 
 
+/* company name, description, and contact info */
+#company-name {
+    font-family: "League Spartan";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 
+#company-desc {
+    text-align: right;
+}
+
+#company-contact {
+    text-align: center;
+}
+
+
+hr {
+    padding: 1rem;
+}
 
 /*Footer*/
 footer {
