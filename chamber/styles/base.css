@@ -67,21 +67,23 @@ ul.open.menulinks{
 }
 
 
-img {
+
+
+
+.hero-image  {
+    position: relative;
+}
+
+.hero-image img {
     width: 100%;
     height: auto;
     filter: brightness(0.8);
  }
 
-
-#hero-image {
-    position: relative;
-}
-
-#hero-call {
+.hero-call {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 38%;
     right: 0;
     bottom: 0;
     margin: 0 auto;

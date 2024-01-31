@@ -37,9 +37,13 @@
         </div>
     </header>
     <main>
-        <div id="hero-image">
-            <img src="images/park_city_main.jpg" alt="Photo of Main Street, Park City - by Olivia Hutcherson">
-            <div id="hero-call">
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-sm.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-med.webp" media="(max-width: 960px)">
+                <img src="images/hero-original.webp" alt="Photo of Main Street, Park City - by Olivia Hutcherson on Unsplash" width="1600" height="930">
+            </picture>
+            <div class="hero-call">
                 <button type="button" class="action">Join the Chamber</button>
             </div>
             </div>
