@@ -5,8 +5,9 @@
 }
 
 :root {
-   --text-color: #fff
-   --bringinline: center; 
+   --text-color: #fff;
+   --border-color: #0D1B2A;
+   --contrast-color: #9c2c13;
 }
 
 
@@ -39,7 +40,7 @@ form label.top, form div {
 
 form input.submitBtn {
     border: none;
-    background-color: red;
+    background-color: var(--contrast-color);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
