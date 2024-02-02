@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Miller - WDD 230 - Web Frontend Development</title>
+    <!--regular meta elements, prior to facebook OG-->
+    <meta name="author" content="Jacob Miller">
+    <meta name="description" content="WDD 230 - Jacob Miller's Web Frontend Development Page">
+    <link rel= "icon" href="favicon.ico">
+    <!--Facebook og tags, and remaining link for font/stylesheets-->
+    <meta property="og:description" content ="WDD 230 - Web Frontend Development, Jacob W. Miller's course assignment portal">
+    <meta property="og:title" content="Jacob Miller's WDD 320 Web Development Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621432667047-edcb75619ba4?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property= "og:url" content="https://jmill215.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div id="mode">
+        🌘
+    </div>
+    <header>
+        <span><img id="personalPhoto" src="images/JacobMiller_300x300.png" alt="Personal Photo of Jacob M."> &nbsp;&nbsp;&nbsp;Jacob W. Miller </span>
+    </header>
+    <nav>
+        <button id = myButton>☰</button>
+        <ul class = "menulinks">
+            <li><a>Home</a></li>
+            <li class="current-menu-item"><a title="Chamber Page" href="chamber/index.html">Chamber</a></li>
+            <li><a title="Chamber Site Plan" href="week01/chamber-site-plan.html" target="_blank" rel="noopener noreferrer">Site Plan</a></li>
+            <li class="active"><a>Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>New Account</legend>
+                <label class="top">Username* <input type="text" name="fname" id="user" placeholder="Enter Username" required></label>
+                <label class="top">Password* <input type="password" name="fname" id="password1" placeholder="Enter Password" required></label>
+                <label class="top">Re-enter Password* <input type="password" name="fname" id="password2" placeholder="Confirm Password" required></label>
+                <p id="message" class="invalid"></p>
+                <label class="top">Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu"></label>
+                
+
+                <div class="slider-container">
+                    <label class="top">Page Rating &nbsp;<input type="range" min="0" max="10" value="1" step="1" class="slider" id="myrange"> <span id="output">-</span>
+                    
+                </div>
+            </fieldset>
+            <input type="submit" value="Register your account" class="submitBtn">
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>&#9880; Jacob Miller &#9880;<br>  United States of America</p>
+        <p id="lastModified">Last Modified:</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/pagevisits.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+    <script src="scripts/range.js"></script>
+</body>
+</html>

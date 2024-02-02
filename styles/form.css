@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --text-color: #fff
+   --bringinline: center; 
+}
+
+
+/*----------- MAIN --------------*/
+form fieldset {
+    margin: 2rem 1rem;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    display: block;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: (--text-color);
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+.slider-container label.top, span{
+    display: flex;
+    font-size: 1rem;
+}
+
+#output {
+    margin-left: 1rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #415A77;
+    color: #ffffff;
+    text-align: center;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
