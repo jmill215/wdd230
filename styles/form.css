@@ -5,7 +5,7 @@
 }
 
 :root {
-   --text-color: #fff;
+   --text-color: #000;
    --border-color: #0D1B2A;
    --contrast-color: #9c2c13;
 }
@@ -23,7 +23,7 @@ form fieldset {
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: (--text-color);
+    color: var(--text-color);
     font-size: 1rem;
     text-align: left;
 }
