@@ -1,0 +1,23 @@
+{
+    "familyName" : "Test",
+    "dateMovedIn" : "October 2020, 2021",
+    "numberOfFamily" : 3,
+    "visitedByBishopric" : "yes",
+    "members" : [
+        {
+          "name" : "John Test",
+          "gender" : "Male",
+          "birthDate" : "August 25, 1980"
+        },
+        {
+          "name" : "Melissa Test",
+          "gender" : "Female",
+          "birthDate" : "September 5th, 1982"
+        },
+        {
+          "name" : "Jordan Test",
+          "gender" : "Male",
+          "secretIdentity" : "February 7, 2014"
+        }
+      ]
+    }

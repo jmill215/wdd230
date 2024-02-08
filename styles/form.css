@@ -38,6 +38,13 @@ form label.top, form div {
     margin-left: 1rem;
 }
 
+#year {
+    text-align: center;
+}
+
+#message {
+    margin-top: 0.5rem;
+}
 form input.submitBtn {
     border: none;
     background-color: var(--contrast-color);
@@ -48,6 +55,7 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+
 
 /*----------- FOOTER --------------*/
 footer {

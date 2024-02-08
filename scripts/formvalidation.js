@@ -6,17 +6,16 @@ var validatebutton = document.getElementsByClassName("submitBtn")
 function validatepassword() {
     if (password1.value != "" & password2 != ""){
         if (password1.value == password2.value) {
-            password1.style.backgroundColor = "green"
-            password2.style.backgroundColor = "green"
             message.textContent = ""
         } else {
-            password1.style.backgroundColor = "red"
-            password2.style.backgroundColor = "red"
+            message.style.color = "red";
             message.textContent = "Passwords do not match"
+            password1.value = ""
+            password2.value = ""
+            password1.focus();
         }
     }
     
 }
 
-password1.onkeyup = validatepassword;
-password2.onkeyup = validatepassword;
+validatebutton.onclick(validatepassword);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Miller - WDD 230 - Web Frontend Development</title>
+    <title>Jacob Miller - WDD 230 - Form Practice Page</title>
     <!--regular meta elements, prior to facebook OG-->
     <meta name="author" content="Jacob Miller">
     <meta name="description" content="WDD 230 - Form Practice Page">
@@ -45,10 +45,10 @@
             <fieldset>
                 <legend>New Account</legend>
                 <label class="top">Username* <input type="text" name="fname" id="user" placeholder="Enter Username" required></label>
-                <label class="top">Password* <input type="password" name="fname" id="password1" placeholder="Enter Password" required></label>
-                <label class="top">Re-enter Password* <input type="password" name="fname" id="password2" placeholder="Confirm Password" required></label>
+                <label class="top">Password* <input type="password" name="fname" id="password1" pattern="[a-zA-Z0-9]{8,}" title="Please enter a password that is 8 characters long, letters and/or numbers" placeholder="Enter Password" required></label>
+                <label class="top">Re-enter Password* <input type="password" name="fname" id="password2" pattern="[a-zA-Z0-9]{8,}" title="Please enter a password that is 8 characters long, letters and/or numbers" placeholder="Confirm Password" required></label>
                 <p id="message" class="invalid"></p>
-                <label class="top">Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu"></label>
+                <label class="top">Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu" required></label>
                 
 
                 <div class="slider-container">
