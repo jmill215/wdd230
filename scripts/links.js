@@ -10,6 +10,8 @@ async function getLinks() {
 
 //Clearing data here as I have not managed to figure out a method for display...despite having done the other activity.
 
+
+//Placing other code here as placeholder & reference
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement('section');
@@ -29,5 +31,5 @@ const displayProphets = (prophets) => {
         card.appendChild(portrait);
 
         cards.appendChild(card);
-    });
+    })
   }
