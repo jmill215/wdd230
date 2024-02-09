@@ -1,31 +1,28 @@
 const baseURL = "https://jmill215.github.io/wdd230/";
-const Activities = document.querySelector("#activity-display")
+
 const LinksURL = "https://jmill215.github.io/wdd230/data/links.json";
 
 async function getLinks() {
-    const response = await fetch(JsonLink);
+    const response = await fetch(linksURL);
     const data = await response.json();
     displayLinks(data.weeks)
 }
 
-const displayLinks = (weeks) => {
-    weeks.foreach((week) => {
-    let weekNum = document.createElement("li");
+function displayLinks(weeks) {
+    const list = document.querySelector(".activity");
 
-    weekNum.textContent = `${week.week}:  `;
-    Activities.appendChild(weekNum);
+    weeks.forEach((week) => {
+        const listElement = document.createElement('li');
+        listElement.textContent = `${week.week}`;
 
-    week.links.foreach((link) => 
-    {
-        let anchor = document.createElement("a");
+        week.links.forEach((link) => {
+            let anchor = document.createElement('a');
+            anchor.setAttribute("href", link.url)
 
-        anchor.textContent = link.title;
-        anchor.setAttribute("href", baseURL + link.url);
-
-        weekNum.appendChild(anchor);
+            listElement.appendChild(anchor)
+        })
+        list.appendChild(listElement);
     })
-});
-
 }
 
 
