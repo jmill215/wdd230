@@ -1,87 +1,105 @@
 {
-    "Week1": [
-      {
-        "name": "HG Layout",
-        "link": "week01/holygrail.html"
-      },
-      {
-        "name": "Media Query",
-        "link": "week01/media-query.html"
-      },
-      {
-        "name": "JS Pen",
-        "link": "https://codepen.io/iok-1sun/pen/mdorNwY"
-      }
-    ],
-    "Week2": [
-      {
-        "name": "Web Design Principles",
-        "link": "week02/design.html"
-      },
-      {
-        "name": "Responsive Hamburger",
-        "link": "https://codepen.io/iok-1sun/pen/abMWWQj?editors=0110"
-      },
-      {
-        "name": "BOM-25",
-        "link": "week02/bom.html"
-      }
-    ],
-  
-    "Week3": [
-      {
-        "name": "WebP",
-        "link": "week03/landscape.webp"
-      },
-      {
-        "name": "Lazy",
-        "link": "week03/lazyload.html"
-      },
-      {
-        "name": "srcset",
-        "link": "week03/responsive-images.html"
-      },
-      {
-        "name": "localStorage",
-        "link": "week03/bom.html"
-      }
-    ],
-  
-    "Week4": [
-      {
-        "name": "CSS Pseudo-Classes",
-        "link": "https://codepen.io/iok-1sun/pen/NWJXZym"
-      },
-      {
-        "name": "CSS Combinators",
-        "link": "week04/images/combinatorExercises.png"
-      },
-      {
-        "name": "HTML Table",
-        "link": "week04/tablebuild.html"
-      },
-      {
-        "name": "HTML Form",
-        "link": "week04/form-start/index.html"
-      }
-    ],
-  
-    "Week5": [
-      {
-        "name": "CSS Pseudo-elements",
-        "link": "https://codepen.io/iok-1sun/pen/wvOEwNv"
-      },
-      {
-        "name": "New Members JSON",
-        "link": "week05/new-ward-members.json"
-      },
-      {
-        "name": "Prophets",
-        "link": "week05/prophets.html"
-      },
-      {
-        "name": "Weather",
-        "link": "week5/weather.html"
-      }
+    "weeks" : [
+        {
+            "week" : "Week 1",
+            "links" : [
+                {
+                    "url" : "week01/holygrail.html",
+                    "title" : "HG Layout"
+                },
+                {
+                    "url" : "week01/media-query.html",
+                    "title" : "Media Query"
+                },
+                {
+                    "url" : "https://codepen.io/iok-1sun/pen/mdorNwY",
+                    "title" : "JS Pen"
+                }
+            ]
+        },
+
+        {
+            "week" : "Week 2",
+            "links" : [
+                {
+                    "url" : "week02/design.html",
+                    "title" : "Web Design Principles"
+                },
+                {
+                    "url" : "https://codepen.io/iok-1sun/pen/abMWWQj?editors=0110",
+                    "title" : "Hamburger Menu"
+                },
+                {
+                    "url" : "week02/bom.html",
+                    "title" : "DOM Manipulation"
+                }
+            ]
+        },
+
+        {
+            "week" : "Week 3",
+            "links" : [
+                {
+                    "url" : "week03/images/landscape.webp",
+                    "title" : "WebP"
+                },
+                {
+                    "url" : "week03/lazyload.html",
+                    "title" : "Lazy"
+                },
+                {
+                    "url" : "week03/responsive-images.html",
+                    "title" : "scrset"
+                },
+                {
+                    "url" : "week03/bom.html",
+                    "title" : "localStorage"
+                }
+            ]
+        },
+
+        {
+            "week" : "Week 4",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/iok-1sun/pen/NWJXZym",
+                    "title" : "CSS Pseudo Class"
+                },
+                {
+                    "url" : "week04/images/combinatorExercises.png",
+                    "title" : "CSS Combinators"
+                },
+                {
+                    "url" : "week04/tablebuild.html",
+                    "title" : "HTML Tables"
+                },
+                {
+                    "url" : "week04/form-start/index.html",
+                    "title" : "Form Practice"
+                }
+            ]
+        },
+
+        {
+            "week" : "Week 5",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/iok-1sun/pen/wvOEwNv",
+                    "title" : "CSS Pseudo Elements"
+                },
+                {
+                    "url" : "week05/new-ward-members.json",
+                    "title" : "JSON"
+                },
+                {
+                    "url" : "week05/prophets.html",
+                    "title" : "Fetch API"
+                },
+                {
+                    "url" : "week05/weather.html",
+                    "title" : "Weather API"
+                }
+            ]
+        }
     ]
-  }
+}
