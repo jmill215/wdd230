@@ -8,8 +8,8 @@ async function getLinks() {
 
     //MDN: returns an array of given object's own enumarable string-keyed property names
     //In other words, use to easily iterate later...hopefully.
-    keys = Object.keys(data)
-    displayLinks(data, keys)
+    keys = Object.keys(data);
+    displayLinks(data, keys);
 }
 
 function displayLinks(data, keys) {
@@ -21,7 +21,7 @@ function displayLinks(data, keys) {
             anchor.setAttribute("href", link.link);
             anchor.setAttribute("target", "_blank")
             anchor.textContent(link.name + " | ")
-            listItem.appendChild(a);
+            listItem.appendChild(anchor);
         });
         activities.appendChild(listItem);
     })
