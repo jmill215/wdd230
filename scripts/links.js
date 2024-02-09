@@ -26,3 +26,5 @@ function displayLinks(data, keys) {
         activities.appendChild(listItem);
     })
 }
+
+getLinks();
