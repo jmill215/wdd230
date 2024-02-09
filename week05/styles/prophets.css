@@ -1,0 +1,19 @@
+body {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, main, footer {
+    margin:1.1rem;
+    position: relative;
+}
+
+h1 {
+   border-bottom: 2px solid navy; 
+}
+
+h2 {
+    color: black;
+    margin: 0 0 2rem 0;
+    border-bottom: 1px solid #bbb;
+}

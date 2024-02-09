@@ -1,45 +1,28 @@
 const baseURL = "https://jmill215.github.io/wdd230/";
-
-const LinksURL = "https://jmill215.github.io/wdd230/data/links.json";
+const activities = document.querySelector(".activity")
+const linksURL = `https://jmill215.github.io/wdd230/data/links.json`;
 
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.weeks)
+
+    //MDN: returns an array of given object's own enumarable string-keyed property names
+    //In other words, use to easily iterate later...hopefully.
+    keys = Object.keys(data)
+    displayLinks(data, keys)
 }
 
-function displayLinks(weeks) {
-    const list = document.querySelector(".activity");
-
-    weeks.forEach((week) => {
-        const listElement = document.createElement('li');
-        listElement.textContent = `${week.week}`;
-
-        week.links.forEach((link) => {
-            let anchor = document.createElement('a');
-            anchor.setAttribute("href", link.url)
-
-            listElement.appendChild(anchor)
-        })
-        list.appendChild(listElement);
+function displayLinks(data, keys) {
+    keys.forEach(key => {
+        const listItem = document.createElement("li")
+        listItem.textContent = key + ":  ";
+        data[key].forEach(link => {
+            const anchor = document.createElement("a");
+            anchor.setAttribute("href", link.link);
+            anchor.setAttribute("target", "_blank")
+            anchor.textContent(link.name + " | ")
+            listItem.appendChild(a);
+        });
+        activities.appendChild(listItem);
     })
 }
-
-
-
-//function displayLinks(data,keys) {
-//    keys.forEach(key => {
-//        const li = document.createElement("li");
-//        li.textContent = key + ": ";
-//        data[key].forEach(link => {
- //           const a = document.createElement("a");
-//            a.setAttribute("href", link.link);
-//            a.setAttribute("target", "_blank");
-//            a.textContent = link.name + " | ";
-//            li.appendChild(a);
- //       });
-//        ActivitiesElement.appendChild(li);
-//    });
-//}
-
-getLinks();
