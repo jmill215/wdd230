@@ -47,9 +47,8 @@
                 <label class="top">Username* <input type="text" name="fname" id="user" placeholder="Enter Username" required></label>
                 <label class="top">Password* <input type="password" name="fname" id="password1" pattern="[a-zA-Z0-9]{8,}" title="Please enter a password that is 8 characters long, letters and/or numbers" placeholder="Enter Password" required></label>
                 <label class="top">Re-enter Password* <input type="password" name="fname" id="password2" pattern="[a-zA-Z0-9]{8,}" title="Please enter a password that is 8 characters long, letters and/or numbers" placeholder="Confirm Password" required></label>
-                <p id="message" class="invalid"></p>
                 <label class="top">Email* <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu" required></label>
-                
+                <p id="message" class="invalid"></p>
 
                 <div class="slider-container">
                     <label class="top">Page Rating &nbsp;<input type="range" min="0" max="10" value="1" step="1" class="slider" id="myrange"> <span id="output">-</span></label>
@@ -61,7 +60,8 @@
         
     </main>
     <footer>
-        <p>&copy;<span id="year"></span>&#9880; Jacob Miller &#9880;<br>  United States of America</p>
+        <p>&copy;<span id="year"></span></p>
+        <p>&#9880; Jacob Miller &#9880;<br>  United States of America</p>
         <p id="lastModified">Last Modified:</p>
     </footer>
     <script src="scripts/getDates.js"></script>
